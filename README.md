@@ -2,16 +2,18 @@
  A simple yet powerful Event Scheduling tool using Google Apps Suite with Google Apps Script with Android App integration.
  
  - [Installation](#installation)
+ - [Application Flow](#flow)
+ - [Screenshots](#screenshots)
  
  ## Installation
  1. Download the files.
- 2. Goto Google Drive and upload the Excel file provided at: `/gs/sheets/FormDB.xlsx'
+ 2. Goto Google Drive and upload the Excel file provided at: `/gs/sheets/FormDB.xlsx`
  3. Double click the file once it is done uploading on Google Drive and copy the URL from the browser when it opens the file editor.
  4. Create a new project on the [Google Scripts Dashboard.](https://script.google.com/home)
- 5. Open any file in the "/gs" folder and copy paste the source code.
- 6. Look for "docLink" identifiers within the file and set the value to the link acquired in step 3.
+ 5. Open any file in the `"/gs"` folder and copy paste the source code.
+ 6. Look for `"docLink"` identifiers within the file and set the value to the link acquired in step 3.
  7. Save the file, then click on Publish -> Deploy as Web App -> **Set Project Version to "New"** -> Access to anyone, anonymous -> Publish. Keep track of the link provided after publishing as we will need this later.
- 8. Do the same for all the files in "/gs" folder.
+ 8. Do the same for all the files in `"/gs"` folder.
  9. Find `GmailApp.sendEmail("<your_email>",` in the `EventScheduler.gs` file and insert your email.
  10. Open the Android Application on Android Studio.
  11. Update `HomeFragment.java` class with the URLs acquried in step 7. Every place required mentions which URL is required. For example, if the URL for EventScheduler.gs is required, then paste the URL there from Step 7.
@@ -20,5 +22,25 @@
  14. Update `ViewEventActivtiy.java` like in step 11.
  15. Build the project and run.
  
+ ## Application Flow
+ 
+ ![Flow](https://image.prntscr.com/image/o6ltBWBRTMiHRN3RZGBOJg.png)
+ 
  ## Screenshots
+ 
+ **Main Screen:**
+ 
+ ![Main Screen](https://image.prntscr.com/image/RZZxwuUpQUCjChKnMC7paA.png)
+ 
+ **Event Page:**
+ 
+ ![Event Page](https://image.prntscr.com/image/C1tH1LzfRH2xoISGuppFGw.png)
+ 
+ **Compare Statistics Page:**
+ 
+ ![Compare Statistics](https://image.prntscr.com/image/nn7PMNRnSAOtIeEPsGBFjA.png)
+ 
+ **Compare Statistics Graph:**
+ 
+ ![Compare Statistics Graph](https://image.prntscr.com/image/Wpn-fTmAToGrUS4hyvHHtg.png)
  
